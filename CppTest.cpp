@@ -12,6 +12,6 @@ void swap(int &c,int &d){
 int main(){
     int a=1,b=2;
     swap(a,b);
-    cout << a << b;
+    cout << a;
     return 0;
 }
