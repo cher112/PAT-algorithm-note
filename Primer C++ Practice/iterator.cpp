@@ -11,8 +11,9 @@ int main(){
         *it = toupper(*it);
     }
     for(int i=0;i<n.size();i++){
-        cout<<n[i]<<endl;
+        cout<<n[i];
     }
+    cout<<endl;
     int a[] = {1,2,3,4,5};
     for(auto it2(a);it2!=end(a);it2++){
         if((*it2) ==5){
