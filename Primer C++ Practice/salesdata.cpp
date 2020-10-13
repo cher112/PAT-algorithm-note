@@ -31,7 +31,5 @@ private:
 int main(){
     const Sales_data a1("OOP book");
     cout<<a1.isbn()<<endl;
-    a1.bookNo = "OP book";
-    cout<<a1.isbn();
     return 0;
 }
