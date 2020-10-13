@@ -21,14 +21,17 @@ public:
 	std::string isbn() const { return bookNo; }
 	Sales_data& combine(const Sales_data&);
 	double avg_price() const;
+
 private:
-	std::string bookNo;
+    std::string bookNo;	
 	unsigned units_sold;
 	double revenue;
 };
 
 int main(){
     const Sales_data a1("OOP book");
+    cout<<a1.isbn()<<endl;
+    a1.bookNo = "OP book";
     cout<<a1.isbn();
     return 0;
 }
