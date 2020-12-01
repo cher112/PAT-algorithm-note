@@ -26,7 +26,7 @@ int main(){
         //traverse each test-pos
         scanf("%d",&k);
         for(int j=0;j<k;j++){
-            scanf("%s %d",stu[num].id,&stu[num].score);
+            scanf("%s%d",stu[num].id,&stu[num].score);
             stu[num].local_num = i+1;
             num++;
         }
