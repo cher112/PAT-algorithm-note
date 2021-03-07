@@ -3,12 +3,16 @@
 
 using namespace std;
 
+bool cmp(int a,int b){
+    return a>b;
+}
 int main(){
     //test the using of pointer in algorithm::sort()
 
-    int a[10] = {3,2,5,1,7};
-    sort(a+1,a+4);
+    int a[5] = {3,2,5,1,7};
+    sort(a,a+5);
     for(auto i:a){cout<<i<<" ";}
-    cout<<endl<<*(a+1);
+    sort(a,a+5,cmp);
+    for(auto i:a){cout<<i<<" ";}
     return 0;
 }
